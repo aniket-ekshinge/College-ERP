@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher | Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url(https://media.istockphoto.com/id/1419766496/photo/abstract-concepts-of-cybersecurity-technology-and-digital-data-protection-protect-internet.jpg?s=2048x2048&w=is&k=20&c=XH5iPaadYeYCyMoKtts6_heqTcSzCcHgUhe-lqaogZQ=);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header>img {
+            width: 100px;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: navy;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: rgb(80, 76, 191);
+        }
+        .profile-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .profile-dropdown {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .profile-dropdown a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            width: 150px;
+            text-align: left;
+        }
+
+        .profile-dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .profile-icon:hover .profile-dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/ICEMLogo.png" alt="ICEM Logo">
+        <h1>Welcome, Faculty!</h1>
+
+        <div class="profile-icon">
+            <img src="img/profile_logo.png" alt="Profile" width="30px">
+            <div class="profile-dropdown">
+                <a href="change_password.php">Change Password</a>
+                <a href="logout.php">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="button-container">
+            <a href="teacher_info.php" class="button"><img src="img/profile_logo.png" alt="Profile">Fill Profile</a>
+            <a href="teacher_show_profile.php" class="button"><img src="img/profile_logo.png" alt="Profile">Show Profile</a>
+            <a href="teacher_update_profile.php" class="button"><img src="img/profile_logo.png" alt="Profile">Update Profile</a>
+            <a href="upload.php" class="button"><img src="img/timetable_logo.png" alt="Timetable">Upload Timetable</a>
+            <a href="teacher_view_timetable.php" class="button"><img src="img/view_tt.png" alt="View Timetable">View Timetable</a>
+            <a href="uploadatt.php" class="button"><img src="img/roll-call.png" alt="Attendance">Add Attendance</a>
+            <a href="viewteacheratt.php" class="button"><img src="img/attendance.png" alt="View Attendance">View Attendance</a>
+
+        </div>
+    </main>
+</body>
+
+</html>

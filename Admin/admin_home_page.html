@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url(https://media.istockphoto.com/id/1419766496/photo/abstract-concepts-of-cybersecurity-technology-and-digital-data-protection-protect-internet.jpg?s=2048x2048&w=is&k=20&c=XH5iPaadYeYCyMoKtts6_heqTcSzCcHgUhe-lqaogZQ=);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header>img {
+            width: 100px;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: navy;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: rgb(80, 76, 191);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/ICEMLogo.png" alt="ICEM Logo">
+        <h1>Welcome, Admin!</h1>
+    </header>
+
+    <main>
+        <div class="button-container">
+            <a href="add_student.php" class="button"><i class='bx bx-user-plus'></i><img src="img/profile_logo.png" alt="Profile">Add Student</a>
+            <a href="add_teacher.php" class="button"><i class='bx bx-user-plus'></i><img src="img/profile_logo.png" alt="Profile">Add Teacher</a>
+            <a href="view_students.php" class="button"><i class='bx bx-group'></i><img src="img/profile_logo.png" alt="Profile">Show Students</a>
+            <a href="view_teacher.php" class="button"><i class='bx bx-group'></i><img src="img/profile_logo.png" alt="Profile">Show Teachers</a>    
+             </div>
+    </main>
+</body>
+
+</html>
